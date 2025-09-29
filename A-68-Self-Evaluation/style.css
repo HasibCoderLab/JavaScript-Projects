@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #005b96;
+}
+
+.input-group,
+.subject-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1em;
+  flex: 1 1 100%;
+}
+
+.subject-row input {
+  flex: 1;
+  min-width: 100px;
+}
+
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 14px 22px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.add-btn {
+  background-color: #28a745;
+}
+
+.add-btn:hover {
+  background-color: #1f7d38;
+}
+
+.check-btn {
+  background-color: #007bff;
+}
+
+.check-btn:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#marksChart {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.performance-message {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.performance-message.good {
+  background-color: #e0f9e7;
+  color: #2e7d32;
+}
+
+.performance-message.moderate {
+  background-color: #fff4e5;
+  color: #ff9800;
+}
+
+.performance-message.low {
+  background-color: #fdecea;
+  color: #d32f2f;
+}
+
+.low-score {
+  color: red;
+  font-weight: bold;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.social-links p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.link img {
+  width: 20px;
+  height: 20px;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio {
+  background-color: #cce7ff;
+}
+
+.facebook {
+  background-color: #e8f4ff;
+  color: #1877f2;
+}
+
+.github {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.instagram {
+  background-color: #fde2e4;
+  color: #c32aa3;
+}
+
+@media (max-width: 600px) {
+  .subject-row {
+    flex-direction: column;
+  }
+
+  .add-btn,
+  .check-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .link {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px 15px;
+  margin-top: 40px;
+  font-size: 1em;
+  background: linear-gradient(to right, #dbeeff, #f0f8ff);
+  border-top: 1px solid #ccc;
+  color: #2c3e50;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.copyright p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.copyright a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.copyright a:hover {
+  color: #003366;
+  text-shadow: 0 0 3px rgba(0, 102, 204, 0.4);
+}

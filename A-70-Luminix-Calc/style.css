@@ -1,0 +1,223 @@
+/* Body Styling */
+body {
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    animation: gradientShift 10s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    }
+    50% {
+        background: linear-gradient(45deg, #141e30, #243b55);
+    }
+    100% {
+        background: linear-gradient(45deg, #2b5876, #4e4376);
+    }
+}
+
+/* Calculator Container */
+#calculator {
+    background: #1f2937;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.1);
+    width: 340px;
+    animation: slideDown 1.5s ease-in-out;
+    transform: translateY(-100px);
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Display Section */
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.6rem;
+    border: 2px solid #1dd1a1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: right;
+    background: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: borderGlow 2s infinite alternate;
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: #1dd1a1;
+        box-shadow: 0 0 15px #1dd1a1;
+    }
+    50% {
+        border-color: #ff9f43;
+        box-shadow: 0 0 15px #ff9f43;
+    }
+    100% {
+        border-color: #ff6b6b;
+        box-shadow: 0 0 15px #ff6b6b;
+    }
+}
+
+/* Button Section */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Individual Button Styling */
+#keys button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff6b6b, #ff9f43);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: buttonPulse 2s infinite alternate;
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 10px 25px rgba(255, 155, 100, 0.4);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
+    }
+}
+
+#keys button:hover {
+    transform: scale(1.2) rotate(2deg);
+    background: linear-gradient(45deg, #48dbfb, #0abde3);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.5);
+}
+
+#keys button:active {
+    transform: scale(1);
+    background: #2c3e50;
+    color: #1dd1a1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Special Buttons */
+#keys button[value="="] {
+    background: linear-gradient(45deg, #1dd1a1, #10ac84);
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #1dd1a1;
+    }
+    100% {
+        box-shadow: 0 0 20px #10ac84;
+    }
+}
+
+#keys button[value="AC"] {
+    background: linear-gradient(45deg, #ee5253, #ff6b6b);
+}
+
+#keys button[value="Del"] {
+    background: linear-gradient(45deg, #576574, #8395a7);
+}
+
+/* Footer Section */
+body::after {
+    content: "© 2024-2026  · Designed & Developed by Hasib Hasan.All rights reserved.";
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #ecf0f1;
+    font-weight: bold;
+    animation: footerGlow 3s infinite alternate;
+}
+
+@keyframes footerGlow {
+    0% {
+        color: #1dd1a1;
+        text-shadow: 0 0 10px #1dd1a1;
+    }
+    50% {
+        color: #ff9f43;
+        text-shadow: 0 0 15px #ff9f43;
+    }
+    100% {
+        color: #ee5253;
+        text-shadow: 0 0 20px #ee5253;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 20px; /* Reduced margin for smaller screens */
+    }
+
+    #calculator {
+        width: 90%; /* Make calculator width responsive */
+        padding: 10px; /* Reduced padding */
+    }
+
+    #display {
+        font-size: 1.4rem; /* Adjust font size for display */
+        padding: 10px; /* Adjust padding */
+    }
+
+    #keys button {
+        padding: 10px; /* Adjust button padding */
+        font-size: 1rem; /* Adjust button font size */
+    }
+
+    #keys {
+        grid-template-columns: repeat(3, 1fr); /* Change button layout */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #calculator {
+        width: 95%; /* Further reduce width */
+    }
+
+    #display {
+        font-size: 1.2rem; /* Further adjust font size */
+    }
+
+    #keys button {
+        padding: 8px; /* Further adjust button padding */
+        font-size: 0.9rem; /* Further adjust button font size */
+    }
+
+    #keys {
+        grid-template-columns: repeat(2, 1fr); /* Adjust button layout for very small screens */
+    }
+}

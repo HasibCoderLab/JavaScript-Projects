@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/favicon.jpeg" type="image/x-icon">
+    <title>Interactive Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-container">
+            <h1>⚔️ Rock Paper Scissors ⚔️</h1>
+            <p class="subtitle">Challenge yourself to the ultimate battle!</p>
+        </div>
+        <div class="score-container">
+            <div class="score">
+                <p>Player</p>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score">
+                <p>Round</p>
+                <span id="round-number">1</span>
+            </div>
+            <div class="score">
+                <p>Computer</p>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+        <div class="game-container">
+            <button id="rock" class="game-btn">🪨</button>
+            <button id="paper" class="game-btn">📄</button>
+            <button id="scissors" class="game-btn">✂️</button>
+        </div>
+        <div class="result-container">
+            <div class="result">
+                <p>Your Choice:</p>
+                <span id="user-choice">-</span>
+            </div>
+            <div class="result">
+                <p>Computer:</p>
+                <div class="computer-choice">
+                    <span id="computer-choice">-</span>
+                </div>
+            </div>
+            <div class="result">
+                <p>Result:</p>
+                <span id="game-result">-</span>
+            </div>
+        </div>
+        <button id="restart" class="restart-btn">🔄 Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

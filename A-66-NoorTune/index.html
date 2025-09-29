@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoorTune ইসলামিক</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="media/OIG1.webp" type="image/x-icon" />
+  <!-- Font Awesome CDN  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="background-pattern"></div>
+  <div class="container">
+    <header>
+      <h1>🌙 NoorTune ইসলামিক</h1>
+      <p>ওয়াজ ও কুরআনের তেলাওয়াত  শুনুন</p>
+      <button id="modeToggle">🌙</button>
+    </header>
+
+    <div id="clock"></div>
+
+    <section class="quotes">
+      <p id="quote">“রহমতের দরজা সবসময় খোলা।”</p>
+    </section>
+
+    <img id="cover" hidden>
+    <h2 id="title" hidden></h2>
+
+    <main>
+
+      <div class="section">
+        <h2>📖 কুরআন তেলাওয়াত</h2>
+        <select onchange="playAudio('quran', this.value)">
+          <option value="">সুরা নির্বাচন করুন</option>
+          <option value="surah_fatiha.mp3">সূরা ফাতিহা</option>
+          <option value="surah_ikhlas.mp3">সূরা ইখলাস</option>
+          <option value="surah-ar-rahman.mp3">সূরা আর-রহমান</option>
+          <option value="surah_yasin.mp3">সূরা ইয়াসিন</option>
+
+
+        </select>
+      </div> 
+
+      <div class="section">
+        <h2>📢  বক্তা নির্বাচন করুন</h2>
+        <select id="wazSpeaker">
+          <option value="">বক্তা বাছাই করুন</option>
+          <option value="tariq"> আবু  ত্বহা আদনান </option>
+          <option value="Qasemi">নজরুল  ইসলাম  কাসেমী </option>
+        </select>
+        <div id="wazPlaylist"></div>
+      </div>
+
+  
+
+      <div id="controls">
+        <button onclick="previousTrack()">⏮️</button>
+        <button onclick="togglePlay()">⏯️</button>
+        <button onclick="nextTrack()">⏭️</button>
+      
+        <div class="progress-container">
+          <span id="currentTime">00:00</span>
+          <input type="range" id="progressBar" value="0" step="1" min="0" />
+          <span id="duration">00:00</span>
+        </div>
+      </div>
+      
+   
+    </main>
+    <footer>
+      <p>© 2025 NoorTune · Designed & Developed by Hasib Hasan. All rights reserved.</p>
+    </p>
+    <div class="social-links">
+      <a href="/https://www.facebook.com/profile.php?id=100090181599136" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://github.com/HasibCoderLab" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://coderhasib.vercel.app/" target="_blank">
+        <i class="fas fa-globe"></i> Portfolio
+      </a>
+      <a href="https://www.instagram.com/mohammad_hasib_hasan/" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+    </footer>
+
+    <audio id="audioPlayer" hidden></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body-Meter 2.0</title>
+  <link rel="shortcut icon" href="Assets/icon.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main">
+    <h1 class="fade-in">Body-Meter 2.0</h1>
+    
+    <form id="form" class="fade-in">
+      <label for="heightFeet">Height (Feet.Inch)</label>
+      <input id="heightFeet" type="number" step="0.1" placeholder="e.g. 5.7" />
+
+      <label for="weight">Weight (kg)</label>
+      <input id="weight" type="number" placeholder="Enter your weight" />
+
+      <label for="age">Age</label>
+      <input id="age" type="number" placeholder="Enter your age" />
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="" disabled selected>Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+       
+      </select>
+
+      <button id="button" type="submit">Calculate BMI</button>
+    </form>
+
+    <div class="result fade-in">
+      <h4>Your BMI Score</h4>
+      <h2 id="score">0</h2>
+      <p id="category"></p>
+    </div>
+
+    <div class="info fade-in">
+      <h4>BMI Weight Guide</h4>
+      <p>Underweight = Less than 18.5</p>
+      <p>Normal = 18.5 – 24.9</p>
+      <p>Overweight = 25 – 29.9</p>
+      <p>Obese = 30 or more</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

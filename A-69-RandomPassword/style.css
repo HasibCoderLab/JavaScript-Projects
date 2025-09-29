@@ -1,0 +1,166 @@
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  animation: scale-up-center 0.5s ease-in-out both;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.container label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.container button:hover {
+  background: #0056b3;
+}
+
+.output {
+  background: #f7f7f7;
+  font-weight: bold;
+  color: #333;
+}
+/* Social Links Section */
+.social-links {
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.follow-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #00ffff;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px transparent;
+}
+
+.link img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(1.2);
+}
+
+.link:hover {
+  background: #00ffff;
+  color: #000;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* Footer */
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  padding: 15px;
+  background: #111;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.copyright a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button-container">
+        <button id="btn1" class="modal-btn">Show modal 1</button>
+        <button id="btn2" class="modal-btn">Show modal 2</button>
+        <button id="btn3" class="modal-btn">Show modal 3</button>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal1">&times;</span>
+            <h2>Modal 1 Content</h2>
+            <p>This is the content for modal 1.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal2">&times;</span>
+            <h2>Modal 2 Content</h2>
+            <p>This is the content for modal 2.</p>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal3">&times;</span>
+            <h2>Modal 3 Content</h2>
+            <p>This is the content for modal 3.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-container">
+            <h1>🎮 Rock Paper Scissors 🎮</h1>
+            <p class="subtitle">Battle against the computer!</p>
+        </div>
+        <div class="score-container">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+            <p>Round: <span id="round-number">1</span></p>
+        </div>
+        <div class="game-container">
+            <button id="rock" class="game-btn">🪨 Rock</button>
+            <button id="paper" class="game-btn">📄 Paper</button>
+            <button id="scissors" class="game-btn">✂️ Scissors</button>
+        </div>
+        <div id="result-container" class="result-container">
+            <p>Your Choice: <span id="user-choice">-</span></p>
+            <p>Computer Choice: <span id="computer-choice">-</span></p>
+            <p>Result: <span id="game-result">-</span></p>
+        </div>
+        <button id="restart" class="restart-btn">🔄 Restart Game</button>
+    </div>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="lose-sound" src="lose.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

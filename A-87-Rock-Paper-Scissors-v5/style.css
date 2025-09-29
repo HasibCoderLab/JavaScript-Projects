@@ -1,0 +1,232 @@
+/* ==== Basic Styles ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Main container */
+.main-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+/* Title */
+.title-container h1 {
+  font-size: 2.6rem;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+  margin: 6px 0 10px;
+}
+.subtitle {
+  font-size: 1.1rem;
+  color: #d4d4d4;
+}
+
+/* Score */
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  margin: 18px 0 6px;
+}
+.score {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffcc00;
+}
+
+/* Game buttons */
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+.game-btn {
+  font-size: 2rem;
+  padding: 18px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.6);
+  transition: all .3s ease-in-out;
+  animation: bounce 2s infinite;
+  outline: 2px solid transparent;
+}
+.game-btn:hover,
+.game-btn:focus-visible {
+  transform: scale(1.15);
+  box-shadow: 0 10px 22px rgba(255, 65, 108, .85);
+  outline: 2px solid rgba(255,255,255,.3);
+}
+
+/* Result display */
+.result-container {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 14px;
+  background: rgba(255,255,255,.08);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  animation: fadeInUp 1s ease-in;
+}
+.result span {
+  font-size: 1.45rem;
+  color: #ffcc00;
+  display: inline-block;
+  min-width: 56px;
+}
+
+/* Restart button */
+.restart-btn {
+  margin-top: 18px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.6);
+  transition: all .25s ease-in-out;
+}
+.restart-btn:hover { transform: translateY(-2px) scale(1.04); }
+.restart-btn:active { transform: translateY(0) scale(1); }
+
+/* ==== Social Section ==== */
+.social-section {
+  margin-top: 26px;
+}
+.social-title {
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+  color: #eaeaea;
+  letter-spacing: .5px;
+}
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 12px;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #0f1226;
+  background: linear-gradient(180deg, #ffffff, #e9eefc);
+  box-shadow: 0 10px 25px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.6);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  will-change: transform, filter;
+  text-decoration: none; /* remove underline */
+}
+.social-btn img { width: 20px; height: 20px; }
+.social-btn span { transition: transform .25s ease; text-decoration: none; }
+
+/* Hover effects for social buttons */
+.social-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 16px 35px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.7);
+  filter: saturate(1.15);
+  text-decoration: none;
+}
+.social-btn:hover span { transform: translateY(-1px); text-decoration: none; }
+
+/* Remove underline completely */
+.social-btn,
+.social-btn span,
+.social-btn img,
+.social-btn:hover,
+.social-btn:hover span,
+.social-btn:hover img {
+  text-decoration: none !important;
+}
+
+/* Brand accents */
+.social-btn.github    { background: linear-gradient(180deg,#fff,#eaeef3); }
+.social-btn.facebook  { background: linear-gradient(180deg,#fff,#e9f2ff); }
+.social-btn.instagram { background: linear-gradient(180deg,#fff,#ffe9f7); }
+.social-btn.twitter   { background: linear-gradient(180deg,#fff,#e9f6ff); }
+.social-btn.youtube   { background: linear-gradient(180deg,#fff,#ffe9e9); }
+.social-btn.portfolio { background: linear-gradient(180deg,#fff,#eef7ff); }
+
+/* ==== Footer ==== */
+.footer {
+  position: relative;
+  margin-top: 28px;
+  padding-top: 14px;
+}
+.footer-inner {
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  padding: 14px 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.04);
+}
+.footer .brand { margin: 0 0 4px; font-weight: 700; letter-spacing: .3px; }
+.footer .credit { margin: 0 0 6px; }
+.footer .credit .chip {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  color: #fff;
+  font-size: .85rem;
+  box-shadow: 0 6px 16px rgba(229,46,113,.45);
+}
+.footer a { color: #73c0ff; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.footer .rights { margin: 0; color: #d0d3ff; opacity: .9; }
+
+/* Neon line glow */
+.neon-line {
+  height: 2px;
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(90deg,#00d2ff,#3a7bd5,#00d2ff);
+  filter: drop-shadow(0 0 6px #3a7bd5);
+  animation: flow 3.2s linear infinite;
+  border-radius: 999px;
+}
+
+/* ==== Animations ==== */
+@keyframes flow { 0%{filter:drop-shadow(0 0 4px #00d2ff);}50%{filter:drop-shadow(0 0 10px #3a7bd5);}100%{filter:drop-shadow(0 0 4px #00d2ff);} }
+@keyframes glow { 0%{text-shadow:0 0 10px #f12711,0 0 20px #f5af19;}100%{text-shadow:0 0 20px #f12711,0 0 30px #f5af19;} }
+@keyframes bounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);} }
+@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+@keyframes fadeInUp { from{transform:translateY(20px);opacity:0;} to{transform:translateY(0);opacity:1;} }
+
+/* ==== Responsive ==== */
+@media (max-width: 640px) {
+  .title-container h1 { font-size: 2rem; }
+  .result span { font-size: 1.2rem; }
+  .game-btn { font-size: 1.6rem; padding: 16px; }
+  .social-links { grid-template-columns: repeat(2, minmax(140px,1fr)); }
+}
+@media (max-width: 400px) {
+  .social-links { grid-template-columns: 1fr; }
+}

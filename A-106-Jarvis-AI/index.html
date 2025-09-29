@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/icon.jpeg" type="image/x-icon">
+    <title>Artificial-Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jarvis AI</h1>
+    <input type="text" id="userInput" placeholder="Ask me anything...">
+    <button onclick="respond()">Ask Jarvis</button>
+    <button onclick="startListening()">Speak</button>
+    <div id="response"></div>
+    <!-- Keyboard Shortcut Guide Modal -->
+<div id="shortcutModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-80">
+      <h2 class="text-xl font-bold mb-4">⌨ Keyboard Shortcuts</h2>
+      <ul class="space-y-2 text-sm">
+        <li><b>Enter </b> → Ask Jarvis</li>
+        <li><b>Ctrl + / </b> → Focus Input</li>
+        <li><b>Ctrl + M </b> → Start Microphone</li>
+        <li><b>Esc </b> → Clear Input</li>
+        
+      </ul>
+      <button onclick="toggleShortcutModal()" class="mt-4 px-3 py-1 bg-blue-500 text-white rounded-lg">Close</button>
+    </div>
+  </div>
+
+  <!-- Social Links Section -->
+<div class="social-links">
+    <p class="follow-title">📌 Follow Me On:</p>
+    <div class="links">
+      <a href="https://coderhasib.vercel.app/" target="_blank" class="link portfolio">🌐 Portfolio</a>
+  
+      <a href="https://www.facebook.com/cvoder.mohammodhasibhasan/" target="_blank" class="link facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /> Facebook
+      </a>
+  
+      <a href="https://github.com/HasibCoderLab" target="_blank" class="link github">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" /> GitHub
+      </a>
+  
+      <a href="https://www.instagram.com/mohammad_hasib_hasan/" target="_blank" class="link instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /> Instagram
+      </a>
+      <a href="https://www.youtube.com/@CodeFusionary" target="_blank" class="link youtube">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /> YouTube
+      </a>
+      
+      <a href="https://x.com/Coderhasib" target="_blank" class="link twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />Twitter (X)
+      </a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="copyright">
+    <p>
+      © 2025 <strong>Jarvis AI</strong> · Designed & Developed by
+      <a href="https://www.github.com/HasibCoderLab" target="_blank">Hasib Hasan</a>.<br />
+      <span>All rights reserved.</span>
+    </p>
+  </footer>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

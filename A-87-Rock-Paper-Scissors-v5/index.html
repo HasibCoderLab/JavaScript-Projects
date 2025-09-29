@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="Assets/favicon.jpeg" type="image/x-icon" />
+  <title>Rock-Paper-Scissors-v5 🎮 | Animated Interactive Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+
+    <!-- Title -->
+    <div class="title-container">
+      <h1>⚔️ Rock Paper Scissors ⚔️</h1>
+      <p class="subtitle">Challenge yourself to the ultimate battle!</p>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score-container">
+      <div class="score">
+        <p>Player</p>
+        <span id="player-score">0</span>
+      </div>
+      <div class="score">
+        <p>Round</p>
+        <span id="round-number">1</span>
+      </div>
+      <div class="score">
+        <p>Computer</p>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+
+    <!-- Game Buttons -->
+    <div class="game-container">
+      <button id="rock" class="game-btn" aria-label="Rock">🪨</button>
+      <button id="paper" class="game-btn" aria-label="Paper">📄</button>
+      <button id="scissors" class="game-btn" aria-label="Scissors">✂️</button>
+    </div>
+
+    <!-- Result Display -->
+    <div class="result-container">
+      <div class="result">
+        <p>Your Choice:</p>
+        <span id="user-choice">-</span>
+      </div>
+      <div class="result">
+        <p>Computer:</p>
+        <div class="computer-choice">
+          <span id="computer-choice">-</span>
+        </div>
+      </div>
+      <div class="result">
+        <p>Result:</p>
+        <span id="game-result">-</span>
+      </div>
+    </div>
+
+    <!-- Restart Button -->
+    <button id="restart" class="restart-btn">🔄 Restart Game</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="brand">©2024-2025 <strong>Rock-Paper-Scissors v5</strong></p>
+        <p class="credit">
+          <span class="chip">⚡ · Designed & Developed by</span>
+          <a href="https://www.github.com/hasibcoderlab" target="_blank" rel="noopener">Hasib Hasan</a>
+        </p>
+        <p class="rights">All rights reserved.</p>
+      </div>
+
+      <!-- Social Links -->
+      <section class="social-section">
+        <h2 class="social-title"> Follow Me</h2>
+        <div class="social-links">
+          <a class="social-btn portfolio" href="https://coderhasib.vercel.app/" target="_blank" rel="noopener">
+            🌐 <span>Portfolio</span>
+          </a>
+          <a class="social-btn facebook" href="https://www.facebook.com/mohammod.hasib.hasan/" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="" /> <span>Facebook</span>
+          </a>
+          <a class="social-btn github" href="https://github.com/HasibCoderLab" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="" /> <span>GitHub</span>
+          </a>
+          <a class="social-btn instagram" href="https://www.instagram.com/mohammad_hasib_hasan/" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="" /> <span>Instagram</span>
+          </a>
+          <a class="social-btn twitter" href="https://x.com/Coderhasib" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="" /> <span>Twitter (X)</span>
+          </a>
+          <a class="social-btn youtube" href="https://www.youtube.com/@CodeFusionary" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="" /> <span>YouTube</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Neon Line -->
+      <div class="neon-line"></div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e1f;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: radial-gradient(circle at top left, #1a1a2e, #16213e);
+    overflow-x: hidden;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.modal-btn {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(136, 211, 206, 0.4);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.modal-content {
+    background-color: #1f1f2e;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 500px;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: modalShow 0.5s ease forwards;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    color: #ff6b81;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: #ff4d6d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalShow {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #88d3ce;
+}
+
+p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    line-height: 1.6;
+}
