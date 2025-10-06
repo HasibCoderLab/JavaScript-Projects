@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/favicon.jpeg" type="image/x-icon">
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>codefusionary-pricing-plans</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/header.jpeg" alt="header-img">
+    </header>
+    <!-- ===========|Box section|============= -->
+    <section class="main-box">
+        <!-- ==============|1st box|===== -->
+        <div class="box">
+            <div class="mid-res">
+                <img src="assets/svg/green-spark.svg" alt="green-spark">
+                <h2 class="mid">Basic Plan</h2>
+                <h4 class="mid"> Limited Access </h4>
+                <p class="mid">Perfect for beginners to get started</p>
+                <div class="dollar">
+                    <span>
+                        Limited Access</span>
+                    <small></small>
+                </div>
+            </div>
+            <!-- Btn -->
+            <button>StartNow</button>
+            <!-- h1 & chect icon -->
+            <h1><i class="fa-solid fa-circle-check"></i> Access to Tutorials</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Community Support</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> 5 Projects Examples</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Beginner Friendly</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Weekly Newsletter</h1>
+
+        </div>
+
+        <!-- 2nd box -->
+        <div class="box">
+            <div class="mid-res">
+                <img src="assets/svg/yellow-spark.svg" alt="yellow-spark">
+                <h2 class="mid">Standard Plan</h2>
+                <h4 class="mid"> All Courses</h4>
+                <p class="mid">For regular learners with 24/7 support</p>
+                <div class="dollar">
+                    <span id="price-std">$19</span>
+                    <small id="duration-std">/per month</small>
+                </div>
+            </div>
+
+            <!-- Btn -->
+            <button class="toggle-btn AllBtn">Buy Now</button>
+
+            <!-- hidden toggle box -->
+            <div class="plan-options" id="plan-options-std">
+                <button onclick="setPlan('std','month')">Monthly</button>
+                <button onclick="setPlan('std','year')">Yearly</button>
+            </div>
+
+
+            <!-- features -->
+            <h1><i class="fa-solid fa-circle-check"></i> Everything in Basic</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> 24/7 Support</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> 20 Projects Examples</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Access to Premium Tutorials</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Certification</h1>
+        </div>
+
+        <!-- ========|3rd box|================= -->
+        <div class="box">
+            <div class="mid-res">
+                <img src="assets/svg/blue-spark.svg" alt="blue-spark">
+                <h2 class="mid">Premium Plan </h2>
+                <h4 class="mid">Designed for Higher Education</h4>
+                <p class="mid">Ultimate package with unlimited resources</p>
+                <div class="dollar">
+                    <span>
+                        AI Mentor
+                    </span>
+                    <small></small>
+                </div>
+            </div>
+            <!-- Btn -->
+            <button class="AllBtn">Contact US</button>
+            <!-- h1 & check icon -->
+            <!-- <h5>What's included</h5> -->
+            <h1><i class="fa-solid fa-circle-check"></i> Everything in Standard</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Unlimited Project Examples</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> 1-on-1 Mentorship</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Access to Exclusive Resources</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Student dashboard</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Lifetime Updates</h1>
+            <h1><i class="fa-solid fa-circle-check"></i> Certification</h1>
+
+        </div>
+    </section>
+
+
+    <div class="social-links">
+        <p> Contact With Me :</p>
+        <div class="links">
+            <a href="https://coderhasib.vercel.app/" target="_blank" class="link portfolio">🌐 Portfolio</a>
+            <a href="https://github.com/HasibCoderLab" target="_blank" class="link github">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" /> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/coder-mohammad-hasib-hasan" target="_blank" class="link linkedin">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /> LinkedIn
+            </a>
+            <a href="https://www.facebook.com/coder.mohammadhasibhasan/" target="_blank" class="link facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /> Facebook
+            </a>           
+            <a href="https://www.instagram.com/mohammad_hasib_hasan/" target="_blank" class="link instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /> Instagram
+            </a>
+            <a href="https://x.com/Coderhasib" target="_blank" class="link twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /> Twitter(X)
+            </a>
+            <a href="https://www.youtube.com/@CodeFusionary" target="_blank" class="link youtube">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /> YouTube
+            </a>          
+
+        </div>
+
+    </div>
+
+    <footer class="copyright">
+        <p>
+            © 2025 <strong>code-fusionary-pricing-plans</strong> · Designed & Developed by
+            <a href="https://www.github.com/hasibcoderlab" target="_blank">Hasib Hasan</a>.<br />
+            <span>All rights reserved.</span>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+@media screen and (max-width:430px) {
+  header img {
+    display: block;
+    margin: 25px auto;
+    width: 20%;
+
+ 
+}
+
+.main-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box {
+    width: 90%;
+    min-height: auto;
+   /* text-align: center; */
+   
+
+}
+.mid-res{
+  text-align: center;
+}
+
+.dollar{
+  justify-content: center;
+}
+.dollar span {
+    text-align: center;
+  
+}
+.box h1{
+  justify-content: center;
+}
+}
+
+
+@media (max-width: 600px) {
+  .subject-row {
+    flex-direction: column;
+  }
+
+  .add-btn,
+  .check-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .link {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+ 
+}
